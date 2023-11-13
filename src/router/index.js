@@ -6,7 +6,25 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('@/views/start.vue')
+      redirect: '/welcome',
+      component: () => import('@/views/home.vue'),
+      children: [
+        {
+          path: '/welcome',
+          name: 'welcome',
+          component: () => import('@/views/welcome.vue')
+        },
+        {
+          path: '/earth',
+          name: 'earth',
+          component: () => import('@/views/earth.vue')
+        },
+        {
+          path: '/map',
+          name: 'map',
+          component: () => import('@/views/map.vue')
+        }
+      ]
     }
   ]
 })

@@ -4,6 +4,7 @@ import { storeToRefs } from 'pinia'
 
 const counterStore = useCounterStore()
 const { count } = storeToRefs(counterStore)
+const { increment } = counterStore
 </script>
 
 <template>
@@ -11,9 +12,12 @@ const { count } = storeToRefs(counterStore)
     <span>hello world !</span>
     <div flex="~ gap-x-xl" items-center>
       <span>{{ count }}</span>
-      <button rounded h-8 w-20 custom-btn @click="counterStore.increment">
-        click me!
-      </button>
+      <a-button @click="increment">
+        <div flex items-center>
+          <i i-carbon-thumbs-up></i>
+          click me!
+        </div>
+      </a-button>
     </div>
   </div>
 </template>
