@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.5.0",
+    "ant-design-vue": "^4.0.6",
     "axios": "^1.6.0",
+    "cesium": "^1.111.0",
+    "leaflet": "^1.9.4",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
     "vue": "^3.3.4",
@@ -18,6 +21,8 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@iconify-json/carbon": "^1.1.21",
+    "@types/leaflet": "^1.9.8",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
     "@vue/test-utils": "^2.4.1",
@@ -26,6 +31,9 @@
     "unplugin-auto-import": "^0.16.7",
     "unplugin-vue-components": "^0.25.2",
     "vite": "^4.4.11",
+    "vite-plugin-externals": "^0.6.2",
+    "vite-plugin-html": "^3.2.0",
+    "vite-plugin-static-copy": "^0.17.0",
     "vitest": "^0.34.6"
   }
 }
